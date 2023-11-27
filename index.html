@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>MENTORIA</h1>
+        <p>preencha o formulário abaixo para <br />agendar a sua mentoria</p>
+      </header>
+      <form>
+        <fieldset class="personal-information">
+          <legend>informações pessoais</legend>
+          <div class="personalinformationfield">
+            <div class="input-information">
+              <label for="name-title"> Nome </label>
+              <input type="text" id="name-title" />
+            </div>
+            <div class="input-information">
+              <label for="lastname-title"> Sobrenome </label>
+              <input type="text" id="lastname-title" />
+            </div>
+          </div>
+          <div class="contactinformationfield">
+            <div class="input-contact">
+              <label for="email-title"> Email </label>
+              <span>(digite um email válido)</span>
+              <input type="email" id="email-title" />
+            </div>
+            <div class="input-contact">
+              <label for="password-title"> Senha </label>
+              <span>(mínimo 6 caracteres)</span>
+              <input type="password" id="password-title" />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="mentor-information">
+          <legend>informações do mentor</legend>
+          <div class="input-mentor">
+            <label for="mentorname-title"> Nome do seu mentor </label>
+            <span>(Apenas o primeiro nome)</span>
+            <input type="text" id="mentorname-title" />
+          </div>
+        </fieldset>
+        <fieldset class="date-information">
+          <legend>Seus horarios disponíveis</legend>
+          <p>Primeira mentoria</p>
+          <div class="timefield">
+            <div class="input-time">
+              <label for="date-title"> Data </label>
+              <input
+                type="date"
+                id="date-title"
+                min="01-01-1900"
+                max="31-12-2023"
+              />
+            </div>
+            <div class="input-timefrom">
+              <label for="event-time-from"> Das </label>
+              <input
+                type="time"
+                id="event-time-from"
+                min="00:00"
+                max="23:59"
+                required
+              />
+            </div>
+            <div class="input-time-to">
+              <label for="event-timeto"> Até </label>
+              <input
+                type="time"
+                id="event-timeto"
+                min="00:00"
+                max="23:59"
+                required
+              />
+            </div>
+          </div>
+          <p>Segunda mentoria</p>
+          <div class="timefield2">
+            <div class="input-time2">
+              <label for="date-title2"> Data </label>
+              <input
+                type="date"
+                id="date-title2"
+                min="01-01-1900"
+                max="31-12-2023"
+              />
+            </div>
+            <div class="input-timefrom2">
+              <label for="event-time-from2"> Das </label>
+              <input
+                type="time"
+                id="event-time-from2"
+                min="00:00"
+                max="23:59"
+                required
+              />
+            </div>
+            <div class="input-time-to2">
+              <label for="event-timeto2"> Até </label>
+              <input
+                type="time"
+                id="event-timeto2"
+                min="00:00"
+                max="23:59"
+                required
+              />
+            </div>
+          </div>
+        </fieldset>
+        <footer>
+        <div class="input-submit">
+          <input type="submit" id="submit-input" value="Salvar" />
+        </div>
+      </footer>
+      </form>
+    </div>
+  </body>
+</html>
